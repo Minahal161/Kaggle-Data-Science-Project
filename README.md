@@ -20,7 +20,7 @@ Here are two of the more promising features that have a relatively good distribu
 <img width="846" height="470" alt="image" src="https://github.com/user-attachments/assets/4f8990b0-68be-4c3c-9162-2cf71aac4186" />
 This feature does not have enough meaningful data for our model to learn from, especially in the diabetic class.
 ## Problem Formulation
-## Input/Output
+### Input/Output
 - Input: Health indicators and patient history (BMI, cholesterol, etc.).
 - Output: Prediction of diabetes risk (Binary Classification).
 ## Models
