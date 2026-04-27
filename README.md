@@ -96,11 +96,11 @@ https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
 Instead of downloading the data manually, this project uses the ucimlrepo library to import the data directly into the notebook. This ensures that the most up-to-date version of the dataset is used and that the feature names are correctly formatted.
  ### Preprocessing Steps
 To prepare the data for the machine learning models, I followed these specific steps in the notebook:
--1 Direct Import: I used the UCI Python import tool to pull the dataset (ID 891) into a pandas dataframe.
--2 Outlier Removal: I calculated the Z-scores for numerical columns and removed any rows that were more than 3 standard deviations away from the mean to prevent extreme values from confusing the model.
--3 Feature Scaling: I applied a StandardScaler to the data. This is a critical step because it ensures that features with large numbers (like BMI) don't overpower features with small numbers (like Age) during the training process.
--4 Handling Imbalance: Because there were many more healthy patients than diabetic patients in the raw data, I balanced the training set using a resampling technique. This step was essential to ensure the model could actually recognize the signs of diabetes rather than just guessing "healthy" every time.
--5 Data Splitting: Finally, I split the data into three sets: Training, Validation, and Testing to properly evaluate the model's performance on unseen data.
+- Direct Import: I used the UCI Python import tool to pull the dataset (ID 891) into a pandas dataframe.
+- Outlier Removal: I calculated the Z-scores for numerical columns and removed any rows that were more than 3 standard deviations away from the mean to prevent extreme values from confusing the model.
+- Feature Scaling: I applied a StandardScaler to the data. This is a critical step because it ensures that features with large numbers (like BMI) don't overpower features with small numbers (like Age) during the training process.
+- Handling Imbalance: Because there were many more healthy patients than diabetic patients in the raw data, I balanced the training set using a resampling technique. This step was essential to ensure the model could actually recognize the signs of diabetes rather than just guessing "healthy" every time.
+- Data Splitting: Finally, I split the data into three sets: Training, Validation, and Testing to properly evaluate the model's performance on unseen data.
 ## Training
 To perform training, make sure no instances are continuous and that the variables are consistent with their data type listed at the beginning. If there are continuous variables that are supposed to be integers or floats that are supposed to be integers, convert all numerical columns to integers. Remove the ID column as well so it doesn't interfere. Set X equal to your feature list (ENSURE YOU ARE USING THE PREPROCESSED VARIABLES) and y equal to your risk (yes or no) list and then split the training and the testing set using the 70-30 method (70% is used for training and 30% is used for testing). Use X_temp as a temporary version of the dataset as to not change anything with the regular dataset. If using SMOTE, make sure to apply SMOTE to your X and Y training and test sets in order to have it apply properly to the class distribution
 ## Perform Evaluation
