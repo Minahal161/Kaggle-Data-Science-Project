@@ -19,12 +19,14 @@ For the preprocessing, I handled the outliers in the numerical columns by removi
 Here are two of the more promising features that have a relatively good distribution between the classes. The distribution in these histograms is slightly skewed in these examples. These histograms also show a clear imbalance as there are more non-diabetic instances than diabetic, which is something to keep in mind when running our models.
 <img width="846" height="470" alt="image" src="https://github.com/user-attachments/assets/4f8990b0-68be-4c3c-9162-2cf71aac4186" />
 This feature does not have enough meaningful data for our model to learn from, especially in the diabetic class.
+
 ## Problem Formulation
-### Input/Output
+ ### Input/Output
 - Input: Health indicators and patient history (BMI, cholesterol, etc.).
 - Output: Prediction of diabetes risk (Binary Classification).
-## Models
+ ### Models
 To accurately predict diabetes risk, I needed models that could analyze multiple health factors at the same time to find hidden patterns. I chose to use ensemble methods like Random Forest and XGBoost, as well as KNN, because they are designed to look at how different features interact with each other. These models help detect patterns in the data that a simple baseline might miss.
+
 ## Training
 I used a variety of models for training, specifically Random Forest, XGBoost, and K-Nearest Neighbors (KNN). During the process, I ran into some initial warnings with XGBoost where the model wouldn't finish properly; I resolved this by ensuring all data types were consistent before starting the training. For the KNN model, I made sure to standardize the data first since that algorithm is sensitive to the scale of the numbers. To keep the process efficient, I used a structured training and testing split to ensure the model saw enough examples of both classes. After noticing the baseline model had trouble with the smaller group of diabetic cases, I adjusted the training data to be more balanced. This allowed the models to learn the patterns for both groups more effectively, resulting in the final performance scores.
 ## Performance Comparison
