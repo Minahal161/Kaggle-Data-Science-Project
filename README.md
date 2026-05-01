@@ -14,7 +14,7 @@ The project utilizes a tabular dataset directly forked from the UCI Machine Lear
 For the preprocessing, I handled the outliers in the numerical columns by removing any data points that had a Z-score greater than 3 or less than -3. After removing the outliers, I standardized the numerical columns using a standard scaler so that the features would have a mean close to 0 and a standard deviation of 1, which is essential for models like KNN. Finally, I ensured that all numerical entries were converted to integers where necessary to prevent errors during model training.
 ## Data Visualization
 <img width="855" height="470" alt="image" src="https://github.com/user-attachments/assets/a7c9cf90-9d37-4fe4-b36f-0903b0e005b0" />
-<img width="855" height="470" alt="image" src="https://github.com/user-attachments/assets/48305146-30e3-44e8-94f3-fd45ac8199e3" />
+<img width="855" height="470" alt="image" src="https://github.com/user-attachments/assets/7e691635-0600-4676-894b-d712c83ee2e1" />
 <img width="846" height="470" alt="image" src="https://github.com/user-attachments/assets/7edd246c-f688-46ae-ac34-806a1f3ad2de" />
 <img width="846" height="470" alt="image" src="https://github.com/user-attachments/assets/cb85ec3b-5db3-40ac-8a07-b2c89005fcdb" />
 Here are few of the more promising features that have a relatively good distribution between the classes. The distribution in these histograms is slightly skewed in these examples. These histograms also show a clear imbalance as there are more non-diabetic instances than diabetic, which is something to keep in mind when running our models.
