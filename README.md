@@ -47,8 +47,6 @@ Decision Function Histogram
 SMOTE Random Forest Evaluation Metrics
 <img width="789" height="590" alt="image" src="https://github.com/user-attachments/assets/897f2a02-ba02-4a43-a426-d2f3d384ff97" />
 SMOTE Random Forest ROC Curve (slightly different)
-<img width="686" height="142" alt="image" src="https://github.com/user-attachments/assets/0347619b-8cc8-432e-ac1e-0eb178c1d483" />
-Model Comparison Table (Only focused on recall as false negatives are a priority)
 <img width="802" height="378" alt="image" src="https://github.com/user-attachments/assets/d596efea-9d3c-429c-ab42-b8d611c9beeb" />
 For the project, I focused on Recall and Accuracy as the primary metrics. In the medical field, Recall is especially important because it ensures we are identifying as many true positive cases as possible and minimizing "false negatives" (missing a patient who is actually at risk). Accuracy was also tracked to see the overall correctness of the predictions. While the ROC curve helps us see how well the model separates the two groups, our results showed that reaching a high true-positive rate without increasing false positives is a challenge with this specific data. However, the Random Forest model provided the most balanced results.
 
