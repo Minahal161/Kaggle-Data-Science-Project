@@ -1,4 +1,5 @@
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/3fe5bb14-484b-47a2-a3cc-112ca9d52981" />
+
 # Kaggle-Data-Science-Project
 # Diabetes Risk Classification Using Health Indicators
 An exploratory data science project using machine learning to predict diabetes risk factors. This project analyzes the CDC's health indicators dataset to identify the most significant lifestyle and demographic predictors of diabetes and pre-diabetes. This repository implements a machine learning pipeline to classify diabetes risk using the CDC's Health Indicators dataset sourced from the UCI Machine Learning Repository:https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
