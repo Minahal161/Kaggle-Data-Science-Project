@@ -10,7 +10,6 @@ The project utilizes a tabular dataset directly forked from the UCI Machine Lear
 - Attributes: The dataset features 22 columns, including detailed feature names, roles, data types, and demographic information. I conducted an audit for missing values and utilized the raw dataset with all instances to maintain data integrity.
 - Size: The dataset contains 253,680 rows.
 - Instances (Split): I used the raw dataset with all instances.
-- Training: 177,576 patients for training, 38,052 for testing, and 38,052 for validation
 ## Preprocessing/Data Clean Up
 For the preprocessing, I handled the outliers in the numerical columns by removing any data points that had a Z-score greater than 3 or less than -3. After removing the outliers, I standardized the numerical columns using a standard scaler so that the features would have a mean close to 0 and a standard deviation of 1, which is essential for models like KNN. Finally, I ensured that all numerical entries were converted to integers where necessary to prevent errors during model training.
 ## Data Visualization
