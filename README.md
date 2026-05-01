@@ -20,6 +20,8 @@ For the preprocessing, I handled the outliers in the numerical columns by removi
 Here are few of the more promising features that have a relatively good distribution between the classes. The distribution in these histograms is slightly skewed in these examples. These histograms also show a clear imbalance as there are more non-diabetic instances than diabetic, which is something to keep in mind when running our models.
 <img width="846" height="470" alt="image" src="https://github.com/user-attachments/assets/4f8990b0-68be-4c3c-9162-2cf71aac4186" />
 This feature does not have enough meaningful data for our model to learn from, especially in the diabetic class. 
+<img width="900" height="790" alt="image" src="https://github.com/user-attachments/assets/e1f8a816-4979-4381-a6cb-1c56456ad0bb" />
+
 
 ## Problem Formulation
  ### Input/Output
