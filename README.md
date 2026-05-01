@@ -48,10 +48,12 @@ SMOTE Random Forest Evaluation Metrics
 <img width="789" height="590" alt="image" src="https://github.com/user-attachments/assets/897f2a02-ba02-4a43-a426-d2f3d384ff97" />
 SMOTE Random Forest ROC Curve (slightly different)
 <img width="802" height="378" alt="image" src="https://github.com/user-attachments/assets/d596efea-9d3c-429c-ab42-b8d611c9beeb" />
+<img width="686" height="142" alt="image" src="https://github.com/user-attachments/assets/7ae394d5-dd0b-4458-a8a6-b6a35168bf6d" />
 For the project, I focused on Recall and Accuracy as the primary metrics. In the medical field, Recall is especially important because it ensures we are identifying as many true positive cases as possible and minimizing "false negatives" (missing a patient who is actually at risk). Accuracy was also tracked to see the overall correctness of the predictions. While the ROC curve helps us see how well the model separates the two groups, our results showed that reaching a high true-positive rate without increasing false positives is a challenge with this specific data. However, the Random Forest model provided the most balanced results.
 
 ## Conclusions
 Random Forest with SMOTE has the highest scores relatively for both classes, considering the class imbalance solution. But our baseline had the highest without addressing the class imbalance, meaning that it was really only classifying non-diabetic patients really well and failing to catch those at risk. SMOTE is a good way to oversample, but there is nuance to this technique as it might not always apply to the dataset properly. Other models surprisingly performed poorly considering the class imbalance solution and their nature in classification problem contexts.
+I chose Random Forest because it is a more dependable 'Safety Net'. While XGBoost is better at finding every sick person, it also causes too many false alarms. In medicine, we want a model that is consistent and doesn't 'memorize' the data—Random Forest gives us that reliable balance for a real-world clinic.
 ## Future Work
  ### Next Steps
 The next thing I would try is testing different ways to balance the dataset to see if it helps the models catch more cases. I would also try removing the less important health indicators to see if a smaller, more focused list of features helps models like KNN perform better. Additionally, adding a "pre-diabetes" category could be very helpful for healthcare workers to identify patients before they become high-risk.
