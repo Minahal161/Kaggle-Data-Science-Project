@@ -2,7 +2,7 @@
 
 # Kaggle-Data-Science-Project
 # Diabetes Risk Classification Using Health Indicators
-This project uses machine learning on the CDC Health Indicators dataset: :https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators to identify key lifestyle and demographic factors that predict diabetes and pre-diabetes risk. It builds a classification pipeline to analyze health data and estimate an individual’s diabetes risk.
+This project uses machine learning on the CDC Health Indicators dataset:https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators to identify key lifestyle and demographic factors that predict diabetes and pre-diabetes risk. It builds a classification pipeline to analyze health data and estimate an individual’s diabetes risk.
 ## Overview
 The goal of this project was to determine if a patient is at risk for diabetes based on indicators such as BMI, cardiac history, and cholesterol etc. Using the CDC's health dataset, I set this up as a classification task to predict risk levels. I compared three different machine learning models: Random Forest, XGBoost, and K-Nearest Neighbors (KNN). While the initial baseline model had difficulty identifying at-risk patients, as there were significantly fewer diabetic instances than non-diabetic ones, the final Random Forest model achieved a balanced 79% accuracy and 79% weighted recall, making it the most effective version for identifying potential health risks.
 ## Summary of Work Done
